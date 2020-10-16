@@ -1,0 +1,21 @@
+@tailwind base;
+
+/* Write your own custom base styles here */
+
+/* Start purging... */
+@tailwind components;
+/* Stop purging. */
+
+/* Write you own custom component styles here */
+
+/* Start purging... */
+@tailwind utilities;
+/* Stop purging. */
+
+/* Your own custom utilities */
+
+@layer components {
+  .btn {
+    @apply inline-block bg-green-500 hover:bg-green-700 text-black hover:text-white font-medium py-2 px-8 rounded-full text-lg;
+  }
+}
