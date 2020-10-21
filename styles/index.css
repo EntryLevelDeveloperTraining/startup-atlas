@@ -15,7 +15,92 @@
 /* Your own custom utilities */
 
 @layer components {
+  /* Tag components */
+  html. body {
+    @apply text-secondary;
+  }
+  section {
+    @apply container mx-auto pad-thick;
+  }
+  h1 {
+    @apply text-6xl leading-none font-bold;
+  }
+  h2 {
+    @apply text-5xl leading-none font-bold;
+  }
+  h3 {
+    @apply text-4xl leading-none font-bold;
+  }
+  h4 {
+    @apply text-3xl leading-none font-bold;
+  }
+  h5 {
+    @apply text-2xl leading-none font-bold;
+  }
+  h5 {
+    @apply text-xl leading-none font-bold;
+  }
+  p {
+    @apply text-lg font-light;
+  }
+  input {
+    @apply shadow bg-transparent appearance-none border border-primary rounded w-full py-2 px-3 leading-tight focus:outline-none focus:shadow-outline;
+  }
+  textarea {
+    @apply shadow bg-transparent appearance-none border border-primary rounded w-full py-2 px-3 leading-tight focus:outline-none focus:shadow-outline;
+  }
+
+  /* Utilities */
+  .pad {
+    @apply p-4 sm:p-6;
+  }
+  .pad-thin {
+    @apply p-2;
+  }
+  .pad-thick {
+    @apply p-6 sm:p-12;
+  }
+  .pady {
+    @apply py-6;
+  }
+  .pady-thin {
+    @apply py-2;
+  }
+  .padx {
+    @apply px-6;
+  }
+  .padx-thin {
+    @apply px-2;
+  }
+
+  /* Background */
+  .bg-banner-bk {
+    background: linear-gradient(rgba(18, 26, 46, 0.8), rgba(18, 26, 46, 0.8)),
+      url(/img/banner-bk.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+  .bg-contact-bk {
+    background: linear-gradient(rgba(18, 26, 46, 0.8), rgba(18, 26, 46, 0.8)),
+      url(/img/contact-bk.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+  .bg-gradient {
+    background: linear-gradient(168deg, #ffffff 55%, #00ffad 0);
+  }
+
+  /* Button */
+  .btn-primary {
+    @apply transition duration-500 ease-in-out bg-primary transform hover:-translate-y-2 text-black hover:text-white inline-block font-medium py-2 px-8 rounded-full text-lg;
+  }
+  .btn-secondary {
+    @apply transition duration-500 ease-in-out transform hover:-translate-y-2 bg-secondary text-white hover:text-white inline-block font-medium py-2 px-8 rounded-full text-lg;
+  }
   .btn {
-    @apply inline-block bg-green-500 hover:bg-green-700 text-black hover:text-white font-medium py-2 px-8 rounded-full text-lg;
+    @apply transition duration-500 ease-in-out transform hover:-translate-y-2 bg-white text-secondary hover:bg-secondary hover:text-white border border-secondary inline-block font-medium py-2 px-8 rounded-full text-lg;
+  }
+  .btn-social-media {
+    @apply transition duration-500 ease-in-out transform hover:-translate-y-2 bg-white text-secondary text-xl px-2 py-1 rounded-full hover:bg-primary hover:text-white inline-block;
   }
 }
