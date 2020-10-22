@@ -20,7 +20,7 @@
     @apply text-secondary;
   }
   section {
-    @apply container mx-auto pad-thick;
+    @apply container sm:mx-auto pad-thick;
   }
   h1 {
     @apply text-6xl leading-none font-bold;
