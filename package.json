@@ -8,13 +8,14 @@
     "dev": "next",
     "build": "next build",
     "start": "next start",
-    "export": "next export",
+    "postbuild": "next-on-netlify",
     "clean": "rm -Rf .next node_modules package-lock.json && npm i"
   },
   "dependencies": {
     "@tailwindui/react": "^0.1.1",
     "axios": "^0.20.0",
     "next": "9.5.5",
+    "next-on-netlify": "^2.5.1",
     "react": "^17.0.0",
     "react-dom": "^17.0.0"
   },
