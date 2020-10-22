@@ -1,4 +1,4 @@
-import { Transition } from '@tailwindui/react';
+import { Transition } from '@headlessui/react';
 
 interface Props {
   children: React.ReactNode;
