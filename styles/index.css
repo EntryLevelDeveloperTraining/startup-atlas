@@ -103,4 +103,24 @@
   .btn-social-media {
     @apply transition duration-500 ease-in-out transform hover:-translate-y-2 bg-white text-secondary text-xl px-2 py-1 rounded-full hover:bg-primary hover:text-white inline-block;
   }
+
+  /* Animations */
+  .fade-in {
+    animation: animation-fade-in 1s ease-in-out 0.1s forwards;
+    opacity: 0;
+  }
+
+  .fade-in-slow {
+    animation: animation-fade-in 1s ease-in-out 2s forwards;
+    opacity: 0;
+  }
+
+  @keyframes animation-fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
 }
