@@ -7,7 +7,8 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "next start -p $PORT",
+    "start": "next start",
+    "postbuild": "next-on-netlify",
     "clean": "rm -Rf .next node_modules package-lock.json && npm i"
   },
   "dependencies": {
