@@ -1,6 +1,6 @@
 export default function Cover() {
   return (
-    <div className="bg-banner-bk text-white text-center md:text-left">
+    <div className="bg-banner-bk text-white text-center md:text-left h-screen">
       <section className="fade-in">
         <div className="h-32" />
         <h1 className="pady">
