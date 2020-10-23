@@ -1,19 +1,13 @@
 const withPlugins = require('next-compose-plugins');
 const optimizedImages = require('next-optimized-images');
 
-module.exports = withPlugins(
+module.exports = withPlugins([
   [
-    [
-      optimizedImages,
-      {
-        /* config for next-optimized-images */
-      },
-    ],
-
-    // your other plugins here
+    optimizedImages,
+    {
+      /* config for next-optimized-images */
+    },
   ],
-  {
-    // Target must be serverless
-    target: 'serverless',
-  }
-);
+
+  // your other plugins here
+]);

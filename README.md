@@ -1,2 +1,3 @@
-# startup-atlas
-Startup Atlas Template
+# template-startup
+
+Template Startup
